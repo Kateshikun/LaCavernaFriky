@@ -27,7 +27,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height: 40px;
+    height: 70px;
     right: 0;
     display: flex;
     align-items: center;
@@ -40,6 +40,12 @@ body {
         rgba(203, 28, 133, 1) 0%,
         rgba(80, 49, 145, 1) 70%
     );
+}
+
+
+menu img{
+    height: 100px;
+    width: 100px;
 }
 
 .logo {
@@ -86,17 +92,6 @@ body {
 }
 
 
-/* Submenús nivel 2 */
-.submenu2 {
-    display: none;
-    position: absolute;
-    padding: 0;
-    top: 100%;
-    left: 0;
-    background-color: #000;
-    z-index: 10;
-    flex-direction: column;
-}
 
 .submenu2 li a {
     color: white;
@@ -143,8 +138,9 @@ li:hover > .submenu3 {
 
 /*titulo Populares*/
 .seccion-populares {
-    margin-top: 30px;
+  margin-top: 80px;
     margin-left: 20px;
+    padding-bottom: 15px;
   }
   
   .titulo-populares {
@@ -152,7 +148,7 @@ li:hover > .submenu3 {
     font-weight: bold;
     color: white;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
   }
 
 .gallery {                /*la carta de arriba de la pagina*/
@@ -201,7 +197,7 @@ li:hover > .submenu3 {
 
   .meta {
     font-size: 12px;
-    color: #aaa;
+    color: #ffffff;
   }
 
   
@@ -269,7 +265,7 @@ li:hover > .submenu3 {
 
 .chapter-info p {
     font-size: 14px;
-    color: #777;
+    color: #ffeeee;
 }
 
 /*parte raking*/
@@ -326,11 +322,16 @@ li:hover > .submenu3 {
 /*Empieza el section 3*/
 
 .updates {
-  max-width: 800px;
+  max-width: 100%;
   margin: 25px;
 }
+
 h1 {
-  margin: 25px;
+  margin-bottom: 25px;
+}
+
+.Titulo-updates{
+  text-align: center;
 }
 
 .update-item {
@@ -385,11 +386,11 @@ h1 {
 .submenu2 {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 50px;
   left: 0;
   background-color: #000; /* Fondo negro */
   box-shadow: none;
-  min-width: 200px;
+  min-width: 180px;
   z-index: 10;
   flex-direction: column;
 }
@@ -459,6 +460,11 @@ footer{
     padding: 20px;  
     gap: 300px; 
     font-size: 13px;
+}
+
+footer img{
+    height: 100px;
+    width: 100px;
 }
 
 .viñeta img{
@@ -578,7 +584,6 @@ ul{
         position: absolute;
         min-height: 70px;
         padding: 20px;
-        justify-content: space-between;
     }
     .menu label {
         display: initial;
@@ -611,10 +616,9 @@ footer{
 
 @media screen and (min-width: 1025px) and (max-width: 1680px){
   .menu{
-        position: absolute;
+        position: relative;
         min-height: 30px;
         padding: 20px;
-        justify-content: space-between;
     }
         
 
