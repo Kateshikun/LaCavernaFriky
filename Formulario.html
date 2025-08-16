@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Sugieres algo?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="Stylesheet" href="css/estilo.css">
+</head>
+</head>
+<body>
+    <div class="menu container">
+      <a class="logo">La Caverna Friky</a>
+       
+      <!-- Para el menu toggle --> 
+      <label for="drop" class="toggle ">☰</label> 
+      <input type="checkbox" id="drop"/>
+  
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <label for="drop-1" class="toggle">Comics Populares</label>
+            <a class="oculto">Comics Populares</a>
+            <input type="checkbox" id="drop-1"/>
+            <ul class="submenu2"> 
+              <li>
+                <label for="drop-2" class="toggle">Marvel</label>
+                <a class="oculto">Marvel</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul class="submenu3"> 
+                  <li><a href="Invincible.html">Invencible</a></li>
+                  <li><a href="Spiderman.html">Spider-man</a></li>
+                </ul> 
+              </li>
+              <li>
+                <label for="drop-3" class="toggle">Marvel DC</label>
+                <a class="oculto">Marvel DC</a>
+                <input type="checkbox" id="drop-3"/>
+                <ul class="submenu3">
+                  <li><a href="TheFlash.html">The Flash</a></li>
+                  <li><a href="Superman.html">Superman</a></li>
+                </ul> 
+              </li>
+              <li>
+                <label for="drop-4" class="toggle">Manga</label>
+                <a class="oculto">Manga</a>
+                <input type="checkbox" id="drop-4"/>
+                <ul class="submenu3">
+                  <li><a href="SoloLeveling.html">Solo Leveling</a></li>
+                  <li><a href="Berserk.html">Berserk</a></li>
+                </ul> 
+              </li>
+            </ul> 
+          </li>
+          <li><a href="Ranking.html">Ranking</a></li>
+          <li><a href="Formulario.html">¿Recomiendas algo?</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+   <form name="Formu_Sugerencias" action="Sugerencia_Comic.php" autocomplete="on" class="container mt-5 mb-5 p-4 bg-dark rounded">
+        <h1 class="text-center text-light">Sugerencia de Comic</h1>
+
+        <div class="mb-3">
+            <input name="Nombres" id="nombre" type="text" class="form-control" placeholder="Nombres">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" id="apellido" name="Apellidos" class="form-control" placeholder="Apellidos">
+        </div>
+
+        <div class="mb-3">
+            <input type="tel" id="telefono" name="Telefono" class="form-control" placeholder="Teléfono">
+        </div>
+
+        <div class="mb-3">
+            <input type="email" id="correo" name="Correo" class="form-control" placeholder="Correo Electrónico" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="sugerencia" class="form-label text-light">Sugerencia/s:</label>
+            <textarea name="sugerencia" id="sugerencia" class="form-control" placeholder="(Comic o de la página web)" autocomplete="off"></textarea>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="terminos" name="Terminos">
+            <label class="form-check-label text-light" for="terminos">Acepto Términos y Condiciones</label>
+        </div>
+
+        <button type="submit" class="btn btn-warning">Enviar</button>
+    </form>
+
+    <footer>
+        <dl>
+            <dt>Sobre nosotros</dt>
+            <dd>Hecho por Adrian y Rudy</dd>
+            <dd>Carnets: CG250400 y GP250120</dd>
+            <dd>Estudiantes de Tecnico en ingenieria en Computación</dd>
+        </dl>
+        <dl>
+            <dt>Contactanos</dt>
+            <dd class="viñeta"><img src="img/Gmail.png">Comicsincreibles@gmail.com</dd>
+            <dd class="viñeta"><img src="img/Instagram.png">Comics_increibles</dd>
+            <dd class="viñeta"><img src="img/Facebook.png">Comics_increiblesfb</dd>
+        </dl>
+        <ul>
+            <li>Abril de 2025</li>
+            <li>© 2025 Todos los derechos reservados</li>
+        </ul>
+    </footer>
+</body>
+</html>
