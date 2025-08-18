@@ -1,0 +1,65 @@
+/* ====== CONTENEDOR DEL CARRITO ====== */
+#carrito {
+  max-width: 800px;
+  margin: 100px auto 30px auto; /* deja espacio arriba para el menú fijo */
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#carrito h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+/* ====== LISTA DE PRODUCTOS ====== */
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.item-carrito:last-child {
+  border-bottom: none;
+}
+
+.item-carrito p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* ====== BOTÓN ELIMINAR ====== */
+.item-carrito button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.item-carrito button:hover {
+  background: darkred;
+}
+
+/* ====== TOTAL ====== */
+.total {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#carrito,
+#carrito h2,
+.item-carrito p,
+.total {
+    color: #000;
+}

@@ -1,0 +1,79 @@
+/* Sección de facturación */
+#facturacion {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+#facturacion h2 {
+    text-align: center;
+    color: #333;
+}
+
+#formFactura label {
+    font-weight: bold;
+    color: #555;
+}
+
+#formFactura input,
+#formFactura textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#formFactura button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formFactura button:hover {
+    background-color: #45a049;
+}
+
+/* Factura generada */
+#facturaGenerada {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+#facturaGenerada h3 {
+    text-align: center;
+    color: #222;
+}
+
+#facturaGenerada p, 
+#facturaGenerada ul {
+    font-size: 14px;
+    color: #333;
+}
+
+#facturaGenerada ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#facturaGenerada .total {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}

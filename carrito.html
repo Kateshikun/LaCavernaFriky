@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="css/factura.css">
+    <script src="js/comic.js"></script>
+</head>
+<body>
+        <div class="menu container">
+      <img src="img/LogoPagina.png" alt="LogoPagina" style="width: 80px;">
+      <a class="logo" href="index.html">La Caverna Friky</a>
+       
+      <!-- Para el menu toggle --> 
+      <label for="drop" class="toggle ">☰</label> 
+      <input type="checkbox" id="drop"/>
+  
+      <nav class="navbar" style="
+    top: 70px;">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <label for="drop-1" class="toggle">Comics Populares</label>
+            <a class="oculto">Comics Populares</a>
+            <input type="checkbox" id="drop-1"/>
+            <ul class="submenu2"> 
+              <li>
+                <label for="drop-2" class="toggle">Marvel</label>
+                <a class="oculto">Marvel</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul class="submenu3"> 
+                  <li><a href="Invincible.html">Invencible</a></li>
+                  <li><a href="Spiderman.html">Spider-man</a></li>
+                </ul> 
+              </li>
+              <li>
+                <label for="drop-3" class="toggle">Marvel DC</label>
+                <a class="oculto">Marvel DC</a>
+                <input type="checkbox" id="drop-3"/>
+                <ul class="submenu3">
+                  <li><a href="TheFlash.html">The Flash</a></li>
+                  <li><a href="Superman.html">Superman</a></li>
+                </ul> 
+              </li>
+              <li>
+                <label for="drop-4" class="toggle">Manga</label>
+                <a class="oculto">Manga</a>
+                <input type="checkbox" id="drop-4"/>
+                <ul class="submenu3">
+                  <li><a href="SoloLeveling.html">Solo Leveling</a></li>
+                  <li><a href="Berserk.html">Berserk</a></li>
+                </ul> 
+              </li>
+            </ul> 
+          </li>
+          <li><a href="Ranking.html">Ranking</a></li>
+          <li><a href="Formulario.html">¿Recomiendas algo?</a></li>
+          <li><a href="carrito.html" class="carrito-icono">
+                🛒 <span id="contadorCarrito">0</span>
+            </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Carrito -->
+    <section id="carrito">
+        <h2>Carrito de compras</h2>
+        <div id="listaCarrito"></div>
+        <div class="total" id="totalCompra"></div>
+    </section>
+
+    <!-- Facturación -->
+    <section id="facturacion">
+        <h2>Datos de Facturación</h2>
+        <form id="formFactura">
+            <label>Nombre completo:</label><br>
+            <input type="text" id="nombre" required><br><br>
+            <label>Teléfono:</label><br>
+            <input type="tel" id="telefono" required><br><br>
+            <label>Dirección:</label><br>
+            <textarea id="direccion" required></textarea><br><br>
+            <button type="submit">Generar Factura</button>
+        </form>
+        <div id="facturaGenerada" style="margin-top:20px; display:none; border:1px solid #ccc; padding:15px; background:#f9f9f9;">
+            <h3>Factura de Compra</h3>
+            <p><strong>ID de compra:</strong> <span id="idCompra"></span></p>
+            <p><strong>Fecha y hora:</strong> <span id="fechaHora"></span></p>
+            <p><strong>Cliente:</strong> <span id="clienteNombre"></span></p>
+            <p><strong>Teléfono:</strong> <span id="clienteTelefono"></span></p>
+            <p><strong>Dirección:</strong> <span id="clienteDireccion"></span></p>
+            <h4>Productos:</h4>
+            <ul id="facturaProductos"></ul>
+            <p class="total"><strong>Total:</strong> $<span id="facturaTotal"></span></p>
+        </div>
+    </section>
+    <script src="js/facturacion.js"></script>
+</body>
+</html>

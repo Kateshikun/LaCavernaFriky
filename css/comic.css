@@ -1,0 +1,277 @@
+body {
+  color: #000;
+  font-family: Arial, sans-serif;
+  margin: 0; /* Quita márgenes por defecto */
+  height: 100vh; /* Que ocupe toda la pantalla */
+  background-image: url("img/fondo.jpg"); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-attachment: fixed; /* Hace que quede fija al hacer scroll */
+}
+
+/* Asegurar que títulos y párrafos sean negros */
+h1, h2, h3, p, ul, li, button {
+  color: #ffffff;
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* izquierda - centro - derecha */
+  gap: 20px;
+  margin: 20px;
+}
+
+/* ====== COLUMNA IZQUIERDA (Galería de imágenes) ====== */
+/* ====== Columna izquierda (solo en escritorio) ====== */
+@media (min-width: 1025px) {
+  .col-izquierda {
+    position: sticky;   /* o fixed si quieres que siempre se quede ahí */
+    top: 80px;          /* debajo del header */
+    align-self: start;  /* se mantiene arriba de la columna */
+  }
+}
+
+.caja.grande {
+  width: 100%;
+  border: 1px solid #272626;
+  padding: 10px;
+  text-align: center;
+  background: #272626;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.producto-img {
+  width: 70%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.miniaturas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap; /* si son muchas miniaturas, bajan */
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border-radius: 8px;
+}
+
+.thumb:hover {
+  transform: scale(1.1);
+  border: 2px solid #000;
+}
+
+/* ====== COLUMNA CENTRO ====== */
+.col-centro {
+  border: 1px dashed transparent; /* solo de referencia */
+}
+
+/* ====== Columna derecha (solo en escritorio) ====== */
+@media (min-width: 1025px) {
+  .col-derecha {
+    position: sticky;   /* o fixed */
+    top: 80px;
+    align-self: start;
+  }
+}
+
+.col-derecha .caja {
+  border: 1px solid #413d3d;
+  padding: 15px;
+  text-align: center;
+  background: #413d3d;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* ====== DESCRIPCIÓN ====== */
+.descripcion {
+  color: #fff;
+  margin: 40px 20px;
+  padding: 20px;
+  border: 1px solid #413d3d;
+  background: #413d3d;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* ====== BLOQUES INFERIORES ====== */
+.inferior {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+}
+
+.comentarios {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr; /* se reducen a 2 columnas */
+  }
+  .col-centro {
+    display: none; /* ocultamos la columna vacía en tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr; /* todas en una columna */
+  }
+  .inferior {
+    grid-template-columns: 1fr;
+  }
+  .producto-img {
+    max-width: 100%; /* ocupa todo el ancho en móvil */
+  }
+}
+
+/* ====== CARRITO ====== */
+#carrito {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px; /* Bordes suaves en cada ítem */
+  background: #fff;
+}
+
+.item-carrito button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 6px; /* Botón con bordes redondeados */
+  transition: background 0.3s;
+}
+
+.item-carrito button:hover {
+  background: darkred;
+}
+
+.caja-mediana button {
+  background: #413d3d; /* Azul llamativo */
+  color: #fff; /* Texto blanco */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover: efecto cuando pasas el mouse */
+.caja-mediana button:hover {
+  background: #57b440; /* Azul más oscuro */
+  transform: scale(1.05); /* Un pequeño zoom */
+}
+
+/* Opcional: cuando el botón se presiona */
+.caja-mediana button:active {
+  transform: scale(0.95);
+}
+
+.comentarios {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  max-height: 250px;        /* límite de alto */
+  overflow-y: auto;         /* scroll si hay muchos */
+}
+
+/* Título */
+.comentarios h3 {
+  margin-bottom: 15px;
+  color: #fffdfd;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Lista */
+.lista-comentarios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada comentario */
+.lista-comentarios li {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.lista-comentarios li:hover {
+  background: #494949;
+  opacity: 0.9;
+}
+
+/* Usuario */
+.usuario {
+  font-weight: bold;
+  color: #3498db;
+  margin: 0 0 5px 0;
+}
+
+/* Texto del comentario */
+.texto {
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+/* Scroll personalizado dentro de comentarios */
+.comentarios::-webkit-scrollbar {
+  width: 8px;
+}
+.comentarios::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 8px;
+}
+.comentarios::-webkit-scrollbar-track {
+  background: #eee;
+}
