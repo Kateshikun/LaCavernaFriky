@@ -590,6 +590,19 @@ ul{
         display: initial;
     }
 
+    #capitulos{
+      padding: 0px;
+    }
+
+    .chapter-list{
+      width: 100%;
+    }
+
+    .chapter-item{
+      height: 40%;
+      width: 40%;
+    }
+
    footer{
     height: fit-content;
     flex-direction: column;
@@ -624,6 +637,10 @@ ul{
     menu:checked ~ .navbar{
         display: initial;
     }
+
+.chapter-list{
+  width: 95%;
+}
 
 footer{
     height: fit-content;
