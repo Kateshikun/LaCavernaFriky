@@ -1,132 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Producto - La Caverna Friky</title>
-<link rel="stylesheet" href="css/estilos.css"> <!--Estilo principal-->
+  <link rel="stylesheet" href="css/estilos.css"> <!--Estilo principal-->
   <link rel="stylesheet" href="css/comic.css"> <!--Estilo pagina-->
-<script src="js/comic.js"></script> <!--funcion de compra-->
+<link rel="stylesheet" href="css/PDF.css"> <!--Estilo pagina-->
+  <script src="js/comic.js"></script> <!--funcion de compra-->
 </head>
+
 <body>
 
   <!-- ================= MENU ================= -->
-        <div class="menu container">
-      <img src="img/LogoPagina.png" alt="LogoPagina" style="width: 80px;">
-      <a class="logo" href="index.html">La Caverna Friky</a>
-       
-      <!-- Para el menu toggle --> 
-      <label for="drop" class="toggle ">☰</label> 
-      <input type="checkbox" id="drop"/>
-  
-      <nav class="navbar" style="
+  <div class="menu container">
+    <img src="img/LogoPagina.png" alt="LogoPagina" style="width: 80px;">
+    <a class="logo" href="index.html">La Caverna Friky</a>
+
+    <!-- Para el menu toggle -->
+    <label for="drop" class="toggle ">☰</label>
+    <input type="checkbox" id="drop" />
+
+    <nav class="navbar" style="
     top: 70px;">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li>
-            <label for="drop-1" class="toggle">Comics Populares</label>
-            <a class="oculto">Comics Populares</a>
-            <input type="checkbox" id="drop-1"/>
-            <ul class="submenu2"> 
-              <li>
-                <label for="drop-2" class="toggle">Marvel</label>
-                <a class="oculto">Marvel</a>
-                <input type="checkbox" id="drop-2"/>
-                <ul class="submenu3"> 
-                  <li><a href="Invincible.html">Invencible</a></li>
-                  <li><a href="Spiderman.html">Spider-man</a></li>
-                </ul> 
-              </li>
-              <li>
-                <label for="drop-3" class="toggle">Marvel DC</label>
-                <a class="oculto">Marvel DC</a>
-                <input type="checkbox" id="drop-3"/>
-                <ul class="submenu3">
-                  <li><a href="TheFlash.html">The Flash</a></li>
-                  <li><a href="Superman.html">Superman</a></li>
-                </ul> 
-              </li>
-              <li>
-                <label for="drop-4" class="toggle">Manga</label>
-                <a class="oculto">Manga</a>
-                <input type="checkbox" id="drop-4"/>
-                <ul class="submenu3">
-                  <li><a href="SoloLeveling.html">Solo Leveling</a></li>
-                  <li><a href="Berserk.html">Berserk</a></li>
-                </ul> 
-              </li>
-            </ul> 
-          </li>
-          <li><a href="Ranking.html">Ranking</a></li>
-          <li><a href="Formulario.html">¿Recomiendas algo?</a></li>
-          <li><a href="carrito.html" class="carrito-icono">
-                🛒 <span id="contadorCarrito"></span>
-            </a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <label for="drop-1" class="toggle">Comics Populares</label>
+          <a class="oculto">Comics Populares</a>
+          <input type="checkbox" id="drop-1" />
+          <ul class="submenu2">
+            <li>
+              <label for="drop-2" class="toggle">Marvel</label>
+              <a class="oculto">Marvel</a>
+              <input type="checkbox" id="drop-2" />
+              <ul class="submenu3">
+                <li><a href="Invincible.html">Invencible</a></li>
+                <li><a href="Spiderman.html">Spider-man</a></li>
+              </ul>
+            </li>
+            <li>
+              <label for="drop-3" class="toggle">Marvel DC</label>
+              <a class="oculto">Marvel DC</a>
+              <input type="checkbox" id="drop-3" />
+              <ul class="submenu3">
+                <li><a href="TheFlash.html">The Flash</a></li>
+                <li><a href="Superman.html">Superman</a></li>
+              </ul>
+            </li>
+            <li>
+              <label for="drop-4" class="toggle">Manga</label>
+              <a class="oculto">Manga</a>
+              <input type="checkbox" id="drop-4" />
+              <ul class="submenu3">
+                <li><a href="SoloLeveling.html">Solo Leveling</a></li>
+                <li><a href="Berserk.html">Berserk</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="Ranking.html">Ranking</a></li>
+        <li><a href="Formulario.html">¿Recomiendas algo?</a></li>
+        <li><a href="carrito.html" class="carrito-icono">
+            🛒 <span id="contadorCarrito"></span>
+          </a></li>
+      </ul>
+    </nav>
+  </div>
 
-  <!-- ================= CONTENIDO PRINCIPAL ================= -->
-   <script>
-  function cambiarImagen(src) {
-    document.getElementById("imagenPrincipal").src = src;
-  }
-</script>
+  
+  <!-- ================= VISOR PDF ================= -->
+  <h2 class="titulo-pdf">📖 Capitulo 78</h2>
+  <iframe class="visor-pdf" src="PDF/Factura_790210.pdf" title="Vista previa del cómic"></iframe>
 
-  <main class="contenedor">
-    <!-- Columna Izquierda: Imagen principal y miniaturas -->
-    <div class="col-izquierda">
-      <div class="caja grande">
-        <img id="imagenPrincipal" src="img/berserk-1.jpg" alt="Producto" class="producto-img">
-      </div>
-      <div class="miniaturas">
-        <img src="img/berserk-1.jpg" class="thumb" onclick="cambiarImagen('img/berserk-1.jpg')" alt="Miniatura 1">
-        <img src="img/berserk-2.jpg" class="thumb" onclick="cambiarImagen('img/berserk-2.jpg')" alt="Miniatura 2">
-        <img src="img/berserk-3.jpg" class="thumb" onclick="cambiarImagen('img/berserk-3.jpg')" alt="Miniatura 3">
-      </div>
-    </div>
-
-     <!-- Columna centro (vacía por ahora) -->
-    <div class="col-centro"></div>
-
-    <!-- Columna derecha: precio y carrito -->
-    <div class="col-derecha">
-      <div class="caja mediana precio">
-        <h2>$28.65</h2>
-      </div>
-      <div class="caja-mediana">
-        <button onclick="agregarAlCarrito(6,'Berserk Deluxe Volume 1',28.65)">Agregar al carrito</button>
-      </div>
-    </div>
-  </main>
-
-  <!-- ====== DESCRIPCION DEL PRODUCTO ====== -->
-  <section class="descripcion">
-    <h3>Descripción del producto</h3>
-    <p>¿Tienes agallas? Berserk de Kentaro Miura ha indignado, horrorizado y deleitado a los fanáticos del manga y el anime desde 1989, creando una legión internacional de devotos acérrimos e inspirando una plétora de series de televisión, películas y videojuegos.</p>
-  </section>
 
 
   <!-- ================= BLOQUES INFERIORES ================= -->
-<section class="inferior">
-  <!-- Comentarios -->
-  <div class="caja grande comentarios">
-    <h3>📝 Calificación del producto</h3>
-    <ul class="lista-comentarios">
-      <li>
-        <p class="usuario">Juan Pérez</p>
-        <p class="texto">⭐️⭐️⭐️⭐️⭐️ - Excelente producto, llegó rápido y la calidad es muy buena. 💯</p>
-      </li>
-      <li>
-        <p class="usuario">María Gómez</p>
-        <p class="texto">⭐️⭐️⭐️⭐️ - Muy bueno, aunque el empaque venía un poco dañado. Lo recomiendo. 👍</p>
-      </li>
-      <li>
-        <p class="usuario">Carlos López</p>
-        <p class="texto">⭐️⭐️⭐️ - Aceptable, cumple lo que promete pero esperaba más resistencia. 🤔</p>
-      </li>
-    </ul>
-  </div>
+  <section class="inferior">
+    <!-- Comentarios -->
+    <div class="caja grande comentarios">
+      <h3>📝 Comentarios del capítulo</h3>
+      <ul class="lista-comentarios">
+        <li>
+          <p class="usuario">Ana Torres</p>
+          <p class="texto">⭐️⭐️⭐️⭐️⭐️ - ¡Este capítulo estuvo increíble! La batalla final fue épica y el giro de la historia me sorprendió mucho. </p>
+        </li>
+        <li>
+          <p class="usuario">Luis Martínez</p>
+          <p class="texto">⭐️⭐️⭐️⭐️ - Me gustó el desarrollo de los personajes en este capítulo, aunque sentí que fue un poco corto. ¡Quiero leer el siguiente ya! </p>
+        </li>
+        <li>
+          <p class="usuario">Sofía Ramírez</p>
+          <p class="texto">⭐️⭐️⭐️ - El capítulo estuvo bien, pero esperaba más acción. Aun así, el arte sigue siendo genial. </p>
+        </li>
+      </ul>
+    </div>
 
     <script src="js/carrusel.js"></script>
     <link rel="stylesheet" href="css/carrusel.css">
@@ -244,22 +213,24 @@
 
     </div>
   </section>
- <footer>
-  <dl>
+  <footer>
+    <dl>
       <dt>Contactanos</dt>
       <dd class="viñeta"><img src="img/Gmail.png">Comicsincreibles@gmail.com</dd>
       <dd class="viñeta"><img src="img/Instagram.png">Comics_increibles</dd>
       <dd class="viñeta"><img src="img/Facebook.png">Comics_increiblesfb</dd>
-  </dl>
-  <ul>
+    </dl>
+    <ul>
       <li>Agosto de 2025</li>
       <li>© 2025 Todos los derechos reservados</li>
-      <li> Este contenido está bajo licencia 
-    <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"> (CC BY-NC 4.0)
-    </a></li>
-  </ul>
-    <img src="img/LogoPagina.png" alt="Logo" >
-</footer>
+      <li> Este contenido está bajo licencia
+        <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"> (CC BY-NC 4.0)
+        </a>
+      </li>
+    </ul>
+    <img src="img/LogoPagina.png" alt="Logo">
+  </footer>
 
 </body>
+
 </html>

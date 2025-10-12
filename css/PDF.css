@@ -1,0 +1,18 @@
+    /* Estilo del visor PDF */
+    .visor-pdf {
+      width: 100%;
+      max-width: 1000px;
+      height: 700px;
+      margin: 40px auto;
+      display: block;
+      border: 3px solid #b2064b;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .titulo-pdf {
+      text-align: center;
+      font-family: 'Comic Sans MS', sans-serif;
+      color: #b2064b;
+      margin-top: 30px;
+    }

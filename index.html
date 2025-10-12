@@ -1,436 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La caverna friky</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/LogoPagina.png" href="img/LogoPagina.png">
 
-    
 </head>
+
 <body>
     <div class="menu container">
-      <img src="img/LogoPagina.png" alt="LogoPagina" style="width: 80px;">
-        <a class="logo" >La Caverna Friky</a>
-       
-      <!-- Para el menu toggle --> 
-      <label for="drop" class="toggle ">☰</label> 
-      <input type="checkbox" id="drop"/>
-  
-      <nav class="navbar" style="top: 70px;">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li>
-            <label for="drop-1" class="toggle">Comics Populares</label>
-            <a class="oculto">Comics Populares</a>
-            <input type="checkbox" id="drop-1"/>
-            <ul class="submenu2"> 
-              <li>
-                <label for="drop-2" class="toggle">Marvel</label>
-                <a class="oculto">Marvel</a>
-                <input type="checkbox" id="drop-2"/>
-                <ul class="submenu3"> 
-                  <li><a href="Invincible.html">Invencible</a></li>
-                  <li><a href="Spiderman.html">Spider-man</a></li>              
-                </ul> 
-              </li>
-              <li>
-                <label for="drop-3" class="toggle">Marvel DC</label>
-                <a class="oculto">DC</a>
-                <input type="checkbox" id="drop-3"/>
-                <ul class="submenu3">
-                  <li><a href="TheFlash.html">The Flash</a></li>
-                  <li><a href="Superman.html">Superman</a></li>
-                </ul> 
-              </li>
-              <li>
-                <label for="drop-4" class="toggle">Manga</label>
-                <a class="oculto">Manga</a>
-                <input type="checkbox" id="drop-4"/>
-                <ul class="submenu3">
-                  <li><a href="SoloLeveling.html">Solo Leveling</a></li>
-                  <li><a href="Berserk.html">Berserk</a></li>
-                </ul> 
-              </li>
-            </ul> 
-          </li>
-          <li><a href="Ranking.html">Ranking</a></li>
-          <li><a href="Formulario.html">¿Recomiendas algo?</a></li>
-                    <li><a href="carrito.html" class="carrito-icono">
-                🛒 <span id="contadorCarrito"></span>
-            </a></li>
-        </ul>
-      </nav>
-    </div>
- 
-    <section> <!-- seccion 1 --> 
-    <div class="seccion-populares">
-        <h1 class="titulo-populares">POPULARES</h1>
-        
-        <div class="gallery">
-    <div class="card">
-        <a href="Invincible.html">
-            <img src="img/Screenshot 2025-04-05 100636.png" alt="Invincible N#25">
-        </a>
-        <div class="content">
-            <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
-            <div class="title">Invincible</div>
-            <div class="tag">Finalizado</div>
-            <span style="color: rgb(225, 4, 4);">•</span>
-            <div class="meta">2003 - 2018</div>
-        </div>
+        <img src="img/LogoPagina.png" alt="LogoPagina" style="width: 80px;">
+        <a class="logo">La Caverna Friky</a>
+
+        <!-- Para el menu toggle -->
+        <label for="drop" class="toggle ">☰</label>
+        <input type="checkbox" id="drop" />
+
+        <nav class="navbar" style="top: 70px;">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <label for="drop-1" class="toggle">Comics Populares</label>
+                    <a class="oculto">Comics Populares</a>
+                    <input type="checkbox" id="drop-1" />
+                    <ul class="submenu2">
+                        <li>
+                            <label for="drop-2" class="toggle">Marvel</label>
+                            <a class="oculto">Marvel</a>
+                            <input type="checkbox" id="drop-2" />
+                            <ul class="submenu3">
+                                <li><a href="Invincible.html">Invencible</a></li>
+                                <li><a href="Spiderman.html">Spider-man</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="drop-3" class="toggle">Marvel DC</label>
+                            <a class="oculto">DC</a>
+                            <input type="checkbox" id="drop-3" />
+                            <ul class="submenu3">
+                                <li><a href="TheFlash.html">The Flash</a></li>
+                                <li><a href="Superman.html">Superman</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="drop-4" class="toggle">Manga</label>
+                            <a class="oculto">Manga</a>
+                            <input type="checkbox" id="drop-4" />
+                            <ul class="submenu3">
+                                <li><a href="SoloLeveling.html">Solo Leveling</a></li>
+                                <li><a href="Berserk.html">Berserk</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Ranking.html">Ranking</a></li>
+                <li><a href="Formulario.html">¿Recomiendas algo?</a></li>
+                <li><a href="carrito.html" class="carrito-icono">
+                        🛒 <span id="contadorCarrito"></span>
+                    </a></li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="card">
-        <a href="SoloLeveling.html">
-            <img src="img/solo-leveling.png" alt="Solo Leveling">
-        </a>
-        <div class="content">
-            <div class="tag" style="background-color:rgb(6, 249, 115);">Manhwa</div>
-            <div class="title">Solo Leveling</div>
-            <div class="tag">Finalizado</div>
-            <span style="color: rgb(225, 4, 4);">•</span>
-            <div class="meta">2020 - 2023</div>
-        </div>
-    </div>
 
-    <div class="card">
-        <a href="TheFlash.html">
-            <img src="img/the flash.png" alt="The Flash">
-        </a>
-        <div class="content">
-            <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
-            <div class="title">The Flash</div>
-            <div class="tag">Finalizado</div>
-            <span style="color: rgb(225, 4, 4);">•</span>
-            <div class="meta">2011 - 2016</div>
-        </div>
-    </div>
+    <section> <!-- seccion 1 -->
+        <div class="seccion-populares">
+            <h1 class="titulo-populares">POPULARES</h1>
 
-    <div class="card">
-        <a href="AllStarSuperman.html">
-            <img src="img/all star superman.png" alt="All Star Superman">
-        </a>
-        <div class="content">
-            <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
-            <div class="title">All Star Superman</div>
-            <div class="tag">Finalizado</div>
-            <span style="color: rgb(225, 4, 4);">•</span>
-            <div class="meta">2005 - 2008</div>
-        </div>
-    </div>
+            <div class="gallery">
+                <div class="card">
+                    <a href="Com-Invencible.html">
+                        <img src="img/Screenshot 2025-04-05 100636.png" alt="Invincible N#25">
+                    </a>
+                    <div class="content">
+                        <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
+                        <div class="title">Invincible</div>
+                        <div class="tag">Finalizado</div>
+                        <span style="color: rgb(225, 4, 4);">•</span>
+                        <div class="meta">2003 - 2018</div>
+                    </div>
+                </div>
 
-    <div class="card">
-        <a href="AvengersCivilWar.html">
-            <img src="img/civil-war.png" alt="Avengers Civil War">
-        </a>
-        <div class="content">
-            <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
-            <div class="title">Avengers Civil War</div>
-            <div class="tag">Finalizado</div>
-            <span style="color: rgb(225, 4, 4);">•</span>
-            <div class="meta">2006 - 2007</div>
-        </div>
-    </div>
+                <div class="card">
+                    <a href="Com-SoloLeveling.html">
+                        <img src="img/solo-leveling.png" alt="Solo Leveling">
+                    </a>
+                    <div class="content">
+                        <div class="tag" style="background-color:rgb(6, 249, 115);">Manhwa</div>
+                        <div class="title">Solo Leveling</div>
+                        <div class="tag">Finalizado</div>
+                        <span style="color: rgb(225, 4, 4);">•</span>
+                        <div class="meta">2020 - 2023</div>
+                    </div>
+                </div>
 
-    <div class="card">
-        <a href="AvengersVsXMen.html">
-            <img src="img/avengers vs x-men.png" alt="Avengers vs X-Men">
-        </a>
-        <div class="content">
-            <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
-            <div class="title">Avengers vs X-Men</div>
-            <div class="tag">Finalizado</div>
-            <span style="color: rgb(225, 4, 4);">•</span>
-            <div class="meta">2012 - 2013</div>
-        </div>
-    </div>
+                <div class="card">
+                    <a href="Com-TheFlash.html">
+                        <img src="img/the flash.png" alt="The Flash">
+                    </a>
+                    <div class="content">
+                        <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
+                        <div class="title">The Flash</div>
+                        <div class="tag">Finalizado</div>
+                        <span style="color: rgb(225, 4, 4);">•</span>
+                        <div class="meta">2011 - 2016</div>
+                    </div>
+                </div>
 
-    <div class="card">
-        <a href="OldManLogan.html">
-            <img src="img/old-man-logan.png" alt="Wolverine: Old Man Logan">
-        </a>
-        <div class="content">
-            <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
-            <div class="title">Wolverine: Old Man Logan</div>
-            <div class="tag">Finalizado</div>
-            <span style="color: rgb(225, 4, 4);">•</span>
-            <div class="meta">2010 - 2012</div>
-        </div>
-    </div>
+                <div class="card">
+                    <a href="Com-Superman.html">
+                        <img src="img/all star superman.png" alt="All Star Superman">
+                    </a>
+                    <div class="content">
+                        <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
+                        <div class="title">All Star Superman</div>
+                        <div class="tag">Finalizado</div>
+                        <span style="color: rgb(225, 4, 4);">•</span>
+                        <div class="meta">2005 - 2008</div>
+                    </div>
+                </div>
 
-    <div class="card">
-        <a href="BatmanTheKillingJoke.html">
-            <img src="img/The killing joke.png" alt="Batman: The Killing Joke">
-        </a>
-        <div class="content">
-            <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
-            <div class="title">Batman: The Killing Joke</div>
-            <div class="tag">Finalizado</div>
-            <span style="color: rgb(225, 4, 4);">•</span>
-            <div class="meta">2023 - Daul</div>
+                <div class="card">
+                    <a href="com-AvengersCivilWar.html">
+                        <img src="img/civil-war.png" alt="Avengers Civil War">
+                    </a>
+                    <div class="content">
+                        <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
+                        <div class="title">Avengers Civil War</div>
+                        <div class="tag">Finalizado</div>
+                        <span style="color: rgb(225, 4, 4);">•</span>
+                        <div class="meta">2006 - 2007</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="com-AvengersVsXMen.html">
+                        <img src="img/avengers vs x-men.png" alt="Avengers vs X-Men">
+                    </a>
+                    <div class="content">
+                        <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
+                        <div class="title">Avengers vs X-Men</div>
+                        <div class="tag">Finalizado</div>
+                        <span style="color: rgb(225, 4, 4);">•</span>
+                        <div class="meta">2012 - 2013</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="com-OldManLogan.html">
+                        <img src="img/old-man-logan.png" alt="Wolverine: Old Man Logan">
+                    </a>
+                    <div class="content">
+                        <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
+                        <div class="title">Wolverine: Old Man Logan</div>
+                        <div class="tag">Finalizado</div>
+                        <span style="color: rgb(225, 4, 4);">•</span>
+                        <div class="meta">2010 - 2012</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="com-BatmanTheKillingJoke.html">
+                        <img src="img/The killing joke.png" alt="Batman: The Killing Joke">
+                    </a>
+                    <div class="content">
+                        <div class="tag" style="background-color:rgb(178, 6, 75);">comic</div>
+                        <div class="title">Batman: The Killing Joke</div>
+                        <div class="tag">Finalizado</div>
+                        <span style="color: rgb(225, 4, 4);">•</span>
+                        <div class="meta">2023 - Daul</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-        </section>
-         
-        <section> <!-- seccion 2 --> 
-            <h1 class="titulo-populares">TRENDING</h1>
-         
-         <section id="capitulos">
-        <h2>Capítulos Populares</h2>
-        <div class="chapter-list">
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/BEGIN-D.png" alt="La Vida Después De La Muerte">
-                    <div class="chapter-info">
-                        <h3>The Beginning After the End</h3>
-                        <p>Capítulo 213</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/belidn sd.png" alt="Solo Leveling Ragnarok">
-                    <div class="chapter-info">
-                        <h3>Solo Leveling</h3>
-                        <p>Capítulo 170</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/ONE.png" alt="One Punch Man">
-                    <div class="chapter-info">
-                        <h3>One Punch Man</h3>
-                        <p>Capítulo 216</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/BLSXF.png" alt="Blue Lock">
-                    <div class="chapter-info">
-                        <h3>Blue Lock</h3>
-                        <p>Capítulo 173</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/DAN-DAN-DAN.png" alt="dan dan dan dan dan">
-                    <div class="chapter-info">
-                        <h3>Dan Dan Dan</h3>
-                        <p>Capítulo 78</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/SABUSO-X.png" alt="La venganza">
-                    <div class="chapter-info">
-                        <h3>Revenge of the Iron-Blooded Sword Hound</h3>
-                        <p>Capítulo 117</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/new, ultimate Spider-man.png" alt="ultimate Spider-man">
-                    <div class="chapter-info">
-                        <h3>Ultimate Spider-Man</h3>
-                        <p>Capítulo 7</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/adsolute-Superman.png" alt="Adsolute Superman">
-                    <div class="chapter-info">
-                        <h3>Absolute Superman</h3>
-                        <p>Capítulo 5</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/Adsolute-Flash.png" alt="Adsolute Flash">
-                    <div class="chapter-info">
-                        <h3>Absolute Flash</h3>
-                        <p>Capítulo 130</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/gracias a Dios.jpg" alt="Adsolute Wonder">
-                    <div class="chapter-info">
-                        <h3>Absolute Wonder Woman</h3>
-                        <p>Capítulo 8</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/Expassion Pass.png" alt="shagri">
-                    <div class="chapter-info">
-                        <h3>Shangri-La Frontier</h3>
-                        <p>Capítulo 216</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/Wistoria -Sword.png" alt="Wistoria w">
-                    <div class="chapter-info">
-                        <h3>Wistoria</h3>
-                        <p>Capítulo 50</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/Wind Breaker.png" alt="Wind Breaker">
-                    <div class="chapter-info">
-                        <h3>Wind Breaker</h3>
-                        <p>Capítulo 174</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/masostro D.png" alt="master Dre">
-                    <div class="chapter-info">
-                        <h3>Maestro Dragon</h3>
-                        <p>Capítulo 109</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/one picece1.png" alt="One P">
-                    <div class="chapter-info">
-                        <h3>One Piece</h3>
-                        <p>Capítulo 1145</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/Guerra de cadaveres.png" alt="Hurra">
-                    <div class="chapter-info">
-                        <h3>Guerra de cadáveres</h3>
-                        <p>Capítulo 47</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/Adsolute-Batman.png" alt="Adsolute Batman">
-                    <div class="chapter-info">
-                        <h3>Absolute Batman</h3>
-                        <p>Capítulo 174</p>
-                    </div>
-                </a>
-            </div>
-            <div class="chapter-item">
-                <a href="#">
-                    <img src="img/POXI.png" alt="">
-                    <div class="chapter-info">
-                        <h3>Marimashita! Iruma-kun</h3>
-                        <p>Capítulo 174</p>
-                    </div>
-                </a>
-            </div>
-          </div>
     </section>
 
-    <section> <!-- seccion 3 -->
+    <section> <!-- seccion 2 -->
+        <h1 class="titulo-populares">TRENDING</h1>
 
-        <div class="updates">
-            <h1 class="Titulo-updates">ACTUALIZADOS</h1>
-
-            <div class="update-item">
-              <div class="update-left">
-                <img src="img/Fire Force.png" alt="">
-                <div class="update-info">
-                  <div class="update-title">Fire Force</div>
-                  <div class="chapter-list">
-                    Capítulo 50</div>
+        <section id="capitulos">
+            <h2>Capítulos Populares</h2>
+            <div class="chapter-list">
+                <div class="chapter-item">
+                    <a href="Cap-BeginininAfterTheEnd-213.html">                      
+                        <img src="img/BEGIN-D.png" alt="La Vida Después De La Muerte">
+                        <div class="chapter-info">
+                            <h3>The Beginning After the End</h3>
+                            <p>Capítulo 213</p>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              <div class="update-time">Hace una hora</div>
+                
+                <div class="chapter-item">
+                    <a href="Cap-SoloLeveling-170.html">
+                        <img src="img/belidn sd.png" alt="Solo Leveling Ragnarok">
+                        <div class="chapter-info">
+                            <h3>Solo Leveling</h3>
+                            <p>Capítulo 170</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-OnePunchMan-216.html">
+                        <img src="img/ONE.png" alt="One Punch Man">
+                        <div class="chapter-info">
+                            <h3>One Punch Man</h3>
+                            <p>Capítulo 216</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-BlueLock-173.html">
+                        <img src="img/BLSXF.png" alt="Blue Lock">
+                        <div class="chapter-info">
+                            <h3>Blue Lock</h3>
+                            <p>Capítulo 173</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-Dandadan-78.html">
+                        <img src="img/DAN-DAN-DAN.png" alt="dan dan dan dan dan">
+                        <div class="chapter-info">
+                            <h3>Dan Dan Dan</h3>
+                            <p>Capítulo 78</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-RevengeOfTheIron-BloodedSwordHound-117.html">
+                        <img src="img/SABUSO-X.png" alt="La venganza">
+                        <div class="chapter-info">
+                            <h3>Revenge of the Iron-Blooded Sword Hound</h3>
+                            <p>Capítulo 117</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-UltimateSpiderman-7.html">
+                        <img src="img/new, ultimate Spider-man.png" alt="ultimate Spider-man">
+                        <div class="chapter-info">
+                            <h3>Ultimate Spider-Man</h3>
+                            <p>Capítulo 7</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-AbsoluteSuperman-5.html">
+                        <img src="img/adsolute-Superman.png" alt="Adsolute Superman">
+                        <div class="chapter-info">
+                            <h3>Absolute Superman</h3>
+                            <p>Capítulo 5</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-AbsoluteFlash-1.html">
+                        <img src="img/Adsolute-Flash.png" alt="Adsolute Flash">
+                        <div class="chapter-info">
+                            <h3>Absolute Flash</h3>
+                            <p>Capítulo 10</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-AbsolteWonderWoman-8.html">
+                        <img src="img/gracias a Dios.jpg" alt="Adsolute Wonder">
+                        <div class="chapter-info">
+                            <h3>Absolute Wonder Woman</h3>
+                            <p>Capítulo 8</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-ShangriLaFrontier-216.html">
+                        <img src="img/Expassion Pass.png" alt="shagri">
+                        <div class="chapter-info">
+                            <h3>Shangri-La Frontier</h3>
+                            <p>Capítulo 216</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-Wistoria-50.html">
+                        <img src="img/Wistoria -Sword.png" alt="Wistoria w">
+                        <div class="chapter-info">
+                            <h3>Wistoria</h3>
+                            <p>Capítulo 50</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-WindBreaker-174.html">
+                        <img src="img/Wind Breaker.png" alt="Wind Breaker">
+                        <div class="chapter-info">
+                            <h3>Wind Breaker</h3>
+                            <p>Capítulo 174</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-MaestroDragon-109.html">
+                        <img src="img/masostro D.png" alt="master Dre">
+                        <div class="chapter-info">
+                            <h3>Maestro Dragon</h3>
+                            <p>Capítulo 109</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-OnePiece-1145.html">
+                        <img src="img/one picece1.png" alt="One P">
+                        <div class="chapter-info">
+                            <h3>One Piece</h3>
+                            <p>Capítulo 1145</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-GuerraDeCadaveres-47.html">
+                        <img src="img/Guerra de cadaveres.png" alt="Hurra">
+                        <div class="chapter-info">
+                            <h3>Guerra de cadáveres</h3>
+                            <p>Capítulo 47</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-AbsoluteBatman-1.html">
+                        <img src="img/Adsolute-Batman.png" alt="Adsolute Batman">
+                        <div class="chapter-info">
+                            <h3>Absolute Batman</h3>
+                            <p>Capítulo 1</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="chapter-item">
+                    <a href="Cap-MarimashitaIruma-kun-174.html">
+                        <img src="img/POXI.png" alt="">
+                        <div class="chapter-info">
+                            <h3>Marimashita! Iruma-kun</h3>
+                            <p>Capítulo 174</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-        
-            <div class="update-item">
-              <div class="update-left">
-                <img src="img/Martial Peak.png" alt="">
-                <div class="update-info">
-                  <div class="update-title">Martial Peak</div>
-                  <div class="chapter-list">
-                    Capítulo 3049<br>
-                    Capítulo 3050<br>
-                  </div>
-                </div>
-              </div>
-              <div class="update-time">Hace una hora</div>
-            </div>
-        
-            <div class="update-item">
-              <div class="update-left">
-                <img src="img/THE Novel extra.png" alt="">
-                <div class="update-info">
-                  <div class="update-title">El Extra en la novela</div>
-                  <div class="chapter-list" style="justify-content:left;">Capítulo 120</div>
-                </div>
-              </div>
-              <div class="update-time">Hace 2 horas</div>
-            </div>
+        </section>
 
-            <div class="update-item">
-                <div class="update-left">
-                  <img src="img/player.png" alt="">
-                  <div class="update-info">
-                    <div class="update-title">player</div>
-                    <div class="chapter-list">
-                      Capítulo 45</div>
-                  </div>
-                </div>
-                <div class="update-time">Hace 3 horas</div>
-              </div>
+        <section> <!-- seccion 3 -->
 
-              <div class="update-item">
-                <div class="update-left">
-                  <img src="img/Kenichi.png" alt="">
-                  <div class="update-info">
-                    <div class="update-title">Kenichi</div>
-                    <div class="chapter-list">
-                      Capítulo 1110
+            <div class="updates">
+                <h1 class="Titulo-updates">ACTUALIZADOS</h1>
+
+                <div class="update-item">
+                    <div class="update-left">
+                        <img src="img/Fire Force.png" alt="">
+                        <div class="update-info">
+                            <div class="update-title">Fire Force</div>
+                            <div class="chapter-list">
+                                Capítulo 50</div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="update-time">Hace una hora</div>
                 </div>
-                <div class="update-time">Hace 4 horas</div>
-              </div>
 
-        </div>
- </section>
+                <div class="update-item">
+                    <div class="update-left">
+                        <img src="img/Martial Peak.png" alt="">
+                        <div class="update-info">
+                            <div class="update-title">Martial Peak</div>
+                            <div class="chapter-list">
+                                Capítulo 3049<br>
+                                Capítulo 3050<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-time">Hace una hora</div>
+                </div>
 
- <footer>
-  <dl>
-      <dt>Contactanos</dt>
-      <dd class="viñeta"><img src="img/Gmail.png">Comicsincreibles@gmail.com</dd>
-      <dd class="viñeta"><img src="img/Instagram.png">Comics_increibles</dd>
-      <dd class="viñeta"><img src="img/Facebook.png">Comics_increiblesfb</dd>
-  </dl>
-  <ul>
-      <li>Agosto de 2025</li>
-      <li>© 2025 Todos los derechos reservados</li>
-      <li> Este contenido está bajo licencia 
-    <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"> (CC BY-NC 4.0)
-    </a></li>
-  </ul>
-    <img src="img/LogoPagina.png" alt="Logo" >
-</footer>
+                <div class="update-item">
+                    <div class="update-left">
+                        <img src="img/THE Novel extra.png" alt="">
+                        <div class="update-info">
+                            <div class="update-title">El Extra en la novela</div>
+                            <div class="chapter-list" style="justify-content:left;">Capítulo 120</div>
+                        </div>
+                    </div>
+                    <div class="update-time">Hace 2 horas</div>
+                </div>
+
+                <div class="update-item">
+                    <div class="update-left">
+                        <img src="img/player.png" alt="">
+                        <div class="update-info">
+                            <div class="update-title">player</div>
+                            <div class="chapter-list">
+                                Capítulo 45</div>
+                        </div>
+                    </div>
+                    <div class="update-time">Hace 3 horas</div>
+                </div>
+
+                <div class="update-item">
+                    <div class="update-left">
+                        <img src="img/Kenichi.png" alt="">
+                        <div class="update-info">
+                            <div class="update-title">Kenichi</div>
+                            <div class="chapter-list">
+                                Capítulo 1110
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-time">Hace 4 horas</div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <dl>
+                <dt>Contactanos</dt>
+                <dd class="viñeta"><img src="img/Gmail.png">Comicsincreibles@gmail.com</dd>
+                <dd class="viñeta"><img src="img/Instagram.png">Comics_increibles</dd>
+                <dd class="viñeta"><img src="img/Facebook.png">Comics_increiblesfb</dd>
+            </dl>
+            <ul>
+                <li>Agosto de 2025</li>
+                <li>© 2025 Todos los derechos reservados</li>
+                <li> Este contenido está bajo licencia
+                    <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"> (CC BY-NC
+                        4.0)
+                    </a>
+                </li>
+            </ul>
+            <img src="img/LogoPagina.png" alt="Logo">
+        </footer>
 
 
 </body>
+
 </html>
