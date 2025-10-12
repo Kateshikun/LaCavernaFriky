@@ -9,4 +9,7 @@ Contribuyentes:
 -Rudy Mauricio González Pineda 
 -Julio César Martínez Nolasco 
 
+Tablero de Notion:
+https://www.notion.so/1d703cbe1d3080a59f82dc1e56096005?v=25603cbe1d3080789cd7000cab8e52c7&source=copy_link
+
 Gracias por ver.
