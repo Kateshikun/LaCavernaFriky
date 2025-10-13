@@ -75,11 +75,11 @@
             document.getElementById("imagenPrincipal").src = src;
         }
     </script>
-
+<main>
     <main class="contenedor">
         <!-- Columna Izquierda: Imagen principal y miniaturas -->
         <div class="col-izquierda">
-            <div class="caja grande">
+            <div class="imagenCompra">
                 <img id="imagenPrincipal" src="img/Civilwar1.jpg" alt="Producto" class="producto-img">
             </div>
             <div class="miniaturas">
@@ -92,30 +92,37 @@
             </div>
         </div>
 
-        <!-- Columna centro (vacía por ahora) -->
-        <div class="col-centro"></div>
-
-        <!-- Columna derecha: precio y carrito -->
-        <div class="col-derecha">
-            <div class="caja mediana precio">
-                <h2>$13.94</h2>
-            </div>
-            <div class="caja-mediana">
-                <button onclick="agregarAlCarrito(7,'Avenger Civil War Vol 1', 13.94)">Agregar al carrito</button>
-            </div>
-        </div>
-    </main>
-
-    <!-- ====== DESCRIPCION DEL PRODUCTO ====== -->
-    <section class="descripcion">
-        <h3>Descripción del producto</h3>
-        <p>
-            Cuando un trágico accidente divide a la comunidad de superhéroes, Iron Man y el Capitán América se enfrentan
-            en una guerra ideológica sobre el control y la libertad. Amigos se convierten en enemigos, y el futuro del
-            universo Marvel pende de un hilo.
-        </p>
+        <!-- Columna centro -->
+<div class="col-centro">
+      <h1 style="text-align: center;">Avengers: Civil War Vol. 1</h1>
+  <section class="descripcion">
+    <h3>Descripción del Producto</h3>
+    <p>
+       El cómic <strong>Avengers: Civil War Vol. 1</strong> viene en una edición de tapa blanda de alta calidad,
+      con páginas a todo color y un acabado brillante que resalta cada detalle de las ilustraciones. Su encuadernado
+      resistente garantiza una lectura cómoda y duradera, ideal tanto para coleccionistas como para nuevos lectores.
+      El producto se entrega sellado y protegido con una funda plástica transparente para evitar daños durante el envío.
+    </p>
     </section>
-
+    <section class="descripcion">
+    <h3>Caracteristicas del Producto</h3>
+    <p>
+ Publicado por la editorial Marvel, este volumen pertenece a la aclamada saga <em>Civil War</em> y está disponible
+      en idioma inglés. Incluye aproximadamente 208 páginas ilustradas en alta calidad. Su ISBN-10 es 078512179X y el
+      ISBN-13 es 978-0785121794. Recomendado para lectores a partir de los 13 años, este tomo mide 6.63 x 0.5 x 10.19
+      pulgadas y ofrece una experiencia visual impresionante con arte detallado y narrativa profunda, perfecta para
+      los fanáticos del universo Marvel.    </p>
+    </section>
+    <div class="col-derecha">
+      <div class="caja mediana precio">
+        <h2>$13.94</h2>
+      </div>
+      <div class="caja-mediana">
+        <button onclick="agregarAlCarrito(7,'Avenger Civil War Vol 1', 13.94)">Agregar al carrito</button>
+      </div>
+    </div>
+    </div>
+</main>
 
     <!-- ================= BLOQUES INFERIORES ================= -->
     <section class="inferior">
