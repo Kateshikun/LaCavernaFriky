@@ -3,7 +3,7 @@
       width: 100%;
       max-width: 1000px;
       height: 700px;
-      margin: 40px auto;
+      margin: 30px auto;
       display: block;
       border: 3px solid #b2064b;
       border-radius: 10px;
@@ -12,7 +12,8 @@
 
     .titulo-pdf {
       text-align: center;
-      font-family: 'Comic Sans MS', sans-serif;
-      color: #b2064b;
-      margin-top: 30px;
+      font-size: 35px;
+      font-family: sans-serif;
+      color: #df226d;
+      margin-top: 90px;
     }

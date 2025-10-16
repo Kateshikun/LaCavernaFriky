@@ -64,19 +64,19 @@
     </div>
 
 
-   <form name="Formu_Sugerencias" action="Sugerencia_Comic.php" autocomplete="on" class="container mt-5 mb-5 p-4 bg-dark rounded">
+   <form name="Formu_Sugerencias" action="Sugerencia_Comic.php" autocomplete="on" class="container mb-5 p-4 bg-dark rounded">
         <h1 class="text-center text-light">Sugerencia de Comic/Manga</h1>
 
         <div class="mb-3">
-            <input name="Nombres" id="nombre" type="text" class="form-control" placeholder="Nombres">
+            <input name="Nombres" id="nombre" type="text" class="form-control" placeholder="Nombres" required>
         </div>
 
         <div class="mb-3">
-            <input type="text" id="apellido" name="Apellidos" class="form-control" placeholder="Apellidos">
+            <input type="text" id="apellido" name="Apellidos" class="form-control" placeholder="Apellidos" required>
         </div>
 
         <div class="mb-3">
-            <input type="tel" id="telefono" name="Telefono" class="form-control" placeholder="Teléfono">
+            <input type="tel" id="telefono" name="Telefono" class="form-control" placeholder="Teléfono (Opcional)">
         </div>
 
         <div class="mb-3">
@@ -85,10 +85,10 @@
 
         <div class="mb-3">
             <label for="sugerencia" class="form-label text-light">Sugerencia/s:</label>
-            <textarea name="sugerencia" id="sugerencia" class="form-control" placeholder="(Comic o de la página web)" autocomplete="off"></textarea>
+            <textarea name="sugerencia" id="sugerencia" class="form-control" placeholder="(Comic o de la página web)" autocomplete="off" required></textarea>
         </div>
 
-        <button type="submit" class="btn btn-warning">Enviar</button>
+        <button type="submit" class="btn btn-warning boton-centrar" id="botonSugerencia" style="margin: 0 auto;">Enviar</button>
     </form>
 
  <footer>
@@ -108,5 +108,6 @@
     <img src="img/LogoPagina.png" alt="Logo" >
 </footer>
 
+<script src="js/formulario.js"></script>
 </body>
 </html>

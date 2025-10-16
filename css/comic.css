@@ -18,9 +18,9 @@ h1, h2, h3, p, ul, li, button {
 /* ====== CONTENEDOR PRINCIPAL ====== */
 .contenedor {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* izquierda - centro - derecha */
+  grid-template-columns: 1fr 1.3fr; /* izquierda - centro - derecha */
   gap: 20px;
-  margin: 20px;
+  margin: 100px 30px;
 }
 
 /* ====== COLUMNA IZQUIERDA (Galería de imágenes) ====== */
@@ -41,12 +41,16 @@ h1, h2, h3, p, ul, li, button {
   background: #272626;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   border-radius: 15px;
-  overflow: hidden;
+  overflow-y: auto;
+}
+
+.imagenCompra{
+  text-align: center;
 }
 
 .producto-img {
-  width: 70%;
-  max-width: 300px;
+  width: 80%;
+  max-width: 390px;
   object-fit: contain;
 }
 
@@ -88,14 +92,14 @@ h1, h2, h3, p, ul, li, button {
 }
 
 .col-derecha .caja {
-  border: 1px solid #413d3d;
-  padding: 15px;
-  text-align: center;
-  background: #413d3d;
+  padding: 14px 45px;
+  text-align:left;
+  background-color:#282928;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   overflow: hidden;
+  margin-bottom: 10px;
+  width: fit-content;
 }
 
 /* ====== DESCRIPCIÓN ====== */
@@ -132,9 +136,7 @@ h1, h2, h3, p, ul, li, button {
   .contenedor {
     grid-template-columns: 1fr 1fr; /* se reducen a 2 columnas */
   }
-  .col-centro {
-    display: none; /* ocultamos la columna vacía en tablets */
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -214,7 +216,7 @@ h1, h2, h3, p, ul, li, button {
   background: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 12px;
-  max-height: 250px;        /* límite de alto */
+  max-height: fit-content;        /* límite de alto */
   overflow-y: auto;         /* scroll si hay muchos */
 }
 
