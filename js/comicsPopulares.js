@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return card;
   }
 
-  fetch("comicsPopulares.json")
+  fetch("json/comicsPopulares.json")
     .then(res => res.json())
     .then(data => {
       contenedor.innerHTML = "";

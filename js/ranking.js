@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contenedor = document.querySelector(".ranking");
 
-    fetch("Ranking.json")
+    fetch("json/Ranking.json")
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {
