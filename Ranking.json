@@ -1,0 +1,72 @@
+[
+  {
+    "posicion": 1,
+    "title": "La Vida Después De La Muerte",
+    "author": "2018 - TurtleMe, Fuyuki23",
+    "popularity": "6K",
+    "img": "img/BEGIN-D.png"
+  },
+  {
+    "posicion": 2,
+    "title": "Adsolute Batman",
+    "author": "2021 - Nii Satoru",
+    "popularity": "4.3K",
+    "img": "img/Adsolute-Batman.png"
+  },
+  {
+    "posicion": 3,
+    "title": "La venganza del sabueso",
+    "author": "2021 - Nii Satoru",
+    "popularity": "3.7K",
+    "img": "img/SABUSO-X.png"
+  },
+  {
+    "posicion": 4,
+    "title": "Solo Leveling",
+    "author": "2021 - Nii Satoru",
+    "popularity": "2.7K",
+    "img": "img/solo-leveling.png"
+  },
+  {
+    "posicion": 5,
+    "title": "Absolute Wonder Woman",
+    "author": "2021 - Nii Satoru",
+    "popularity": "1.8K",
+    "img": "img/gracias a Dios.jpg"
+  },
+  {
+    "posicion": 6,
+    "title": "Marimashita! Iruma Kun",
+    "author": "2021 - Nii Satoru",
+    "popularity": "1.4K",
+    "img": "img/POXI.png"
+  },
+  {
+    "posicion": 7,
+    "title": "Avenger vs X-men",
+    "author": "2021 - Nii Satoru",
+    "popularity": "1.3K",
+    "img": "img/avengers vs x-men.png"
+  },
+  {
+    "posicion": 8,
+    "title": "Old Man Logan",
+    "author": "2021 - Nii Satoru",
+    "popularity": "1.3K",
+    "img": "img/old-man-logan.png"
+  },
+  {
+    "posicion": 9,
+    "title": "Guerra de Cadaveres",
+    "author": "2021 - Nii Satoru",
+    "popularity": "1.3K",
+    "img": "IMG/Guerra de cadaveres.png"
+  },
+  {
+    "posicion": 10,
+    "title": "One Piece",
+    "author": "2021 - Nii Satoru",
+    "popularity": "1.2K",
+    "img": "img/one picece1.png"
+  }
+]
