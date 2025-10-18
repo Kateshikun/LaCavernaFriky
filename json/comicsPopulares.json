@@ -1,0 +1,74 @@
+[
+    {
+      "titulo": "Invincible",
+      "imagen": "img/Screenshot 2025-04-05 100636.png",
+      "url": "Com-Invencible.html",
+      "tipo": "comic",
+      "estado": "Finalizado",
+      "anio": "2003 - 2018",
+      "color": "rgb(178, 6, 75)"
+    },
+    {
+      "titulo": "Solo Leveling",
+      "imagen": "img/solo-leveling.png",
+      "url": "Com-SoloLeveling.html",
+      "tipo": "Manhwa",
+      "estado": "Finalizado",
+      "anio": "2020 - 2023",
+      "color": "rgb(6, 249, 115)"
+    },
+    {
+      "titulo": "The Flash",
+      "imagen": "img/the flash.png",
+      "url": "Com-TheFlash.html",
+      "tipo": "comic",
+      "estado": "Finalizado",
+      "anio": "2011 - 2016",
+      "color": "rgb(178, 6, 75)"
+    },
+    {
+      "titulo": "All Star Superman",
+      "imagen": "img/all star superman.png",
+      "url": "Com-Superman.html",
+      "tipo": "comic",
+      "estado": "Finalizado",
+      "anio": "2005 - 2008",
+      "color": "rgb(178, 6, 75)"
+    },
+    {
+      "titulo": "Avengers Civil War",
+      "imagen": "img/civil-war.png",
+      "url": "com-AvengersCivilWar.html",
+      "tipo": "comic",
+      "estado": "Finalizado",
+      "anio": "2006 - 2007",
+      "color": "rgb(178, 6, 75)"
+    },
+    {
+      "titulo": "Avengers vs X-Men",
+      "imagen": "img/avengers vs x-men.png",
+      "url": "com-AvengersVsXMen.html",
+      "tipo": "comic",
+      "estado": "Finalizado",
+      "anio": "2012 - 2013",
+      "color": "rgb(178, 6, 75)"
+    },
+    {
+      "titulo": "Wolverine: Old Man Logan",
+      "imagen": "img/old-man-logan.png",
+      "url": "com-OldManLogan.html",
+      "tipo": "comic",
+      "estado": "Finalizado",
+      "anio": "2010 - 2012",
+      "color": "rgb(178, 6, 75)"
+    },
+    {
+      "titulo": "Batman: The Killing Joke",
+      "imagen": "img/The killing joke.png",
+      "url": "com-BatmanTheKillingJoke.html",
+      "tipo": "comic",
+      "estado": "Finalizado",
+      "anio": "2023 - Daul",
+      "color": "rgb(178, 6, 75)"
+    }
+]
