@@ -1,5 +1,5 @@
 
-🌟 COMCIS Y MANGAS
+🌟 COMICS Y MANGAS
 
 ¡Bienvenido a COMCIS Y MANGAS, una página web dedicada al apasionante mundo de los cómics y mangas!
 Un espacio creado por fanáticos, para fanáticos 🎨📚
