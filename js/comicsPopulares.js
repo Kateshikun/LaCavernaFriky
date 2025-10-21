@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="title">${comic.titulo}</div>
         <div class="tag">${comic.estado}</div>
         <span style="color: rgb(225, 4, 4);">•</span>
-        <div class="meta">${comic.anio}</div>
+        <div class="meta">${comic.año}</div>
       </div>
     `;
     return card;

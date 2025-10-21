@@ -5,7 +5,7 @@
       "url": "Com-Invencible.html",
       "tipo": "comic",
       "estado": "Finalizado",
-      "anio": "2003 - 2018",
+      "año": "2003 - 2018",
       "color": "rgb(178, 6, 75)"
     },
     {
@@ -14,7 +14,7 @@
       "url": "Com-SoloLeveling.html",
       "tipo": "Manhwa",
       "estado": "Finalizado",
-      "anio": "2020 - 2023",
+      "año": "2020 - 2023",
       "color": "rgb(6, 249, 115)"
     },
     {
@@ -23,7 +23,7 @@
       "url": "Com-TheFlash.html",
       "tipo": "comic",
       "estado": "Finalizado",
-      "anio": "2011 - 2016",
+      "año": "2011 - 2016",
       "color": "rgb(178, 6, 75)"
     },
     {
@@ -32,7 +32,7 @@
       "url": "Com-Superman.html",
       "tipo": "comic",
       "estado": "Finalizado",
-      "anio": "2005 - 2008",
+      "año": "2005 - 2008",
       "color": "rgb(178, 6, 75)"
     },
     {
@@ -41,7 +41,7 @@
       "url": "com-AvengersCivilWar.html",
       "tipo": "comic",
       "estado": "Finalizado",
-      "anio": "2006 - 2007",
+      "año": "2006 - 2007",
       "color": "rgb(178, 6, 75)"
     },
     {
@@ -50,7 +50,7 @@
       "url": "com-AvengersVsXMen.html",
       "tipo": "comic",
       "estado": "Finalizado",
-      "anio": "2012 - 2013",
+      "año": "2012 - 2013",
       "color": "rgb(178, 6, 75)"
     },
     {
@@ -59,7 +59,7 @@
       "url": "com-OldManLogan.html",
       "tipo": "comic",
       "estado": "Finalizado",
-      "anio": "2010 - 2012",
+      "año": "2010 - 2012",
       "color": "rgb(178, 6, 75)"
     },
     {
@@ -68,7 +68,7 @@
       "url": "com-BatmanTheKillingJoke.html",
       "tipo": "comic",
       "estado": "Finalizado",
-      "anio": "2023 - Daul",
+      "año": "2023 - Daul",
       "color": "rgb(178, 6, 75)"
     }
 ]

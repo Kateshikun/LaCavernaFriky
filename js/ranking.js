@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img class="cover" src="${item.img}" alt="${item.title}">
                     <div class="info">
                         <div class="title">${item.title}</div>
-                        <div class="author">${item.author}</div>
+                        <div class="author">${item.autor}</div>
                     </div>
-                    <div class="popularity">${item.popularity}</div>
+                    <div class="popularity">${item.popularidad}</div>
                 `;
                 contenedor.appendChild(div);
             });
